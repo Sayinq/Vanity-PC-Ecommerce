@@ -18,6 +18,8 @@
   -webkit-text-size-adjust: 100%;
 }
 
-body {
-  background: blue;
+#hero {
+  background: center / contain no-repeat url('https://cdn.midjourney.com/8bbc3641-efc2-437a-975f-e74e46cec6fa/0_0.png');
+  object-fit: fill;
+  background-size: 100% 100%;
 }
