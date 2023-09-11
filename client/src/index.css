@@ -18,8 +18,18 @@
   -webkit-text-size-adjust: 100%;
 }
 
+body {
+  background: #F4F8FD;
+  overflow-x: hidden;
+}
+
 #hero {
-  background: center / contain no-repeat url('https://cdn.midjourney.com/8bbc3641-efc2-437a-975f-e74e46cec6fa/0_0.png');
-  object-fit: fill;
-  background-size: 100% 100%;
+  background: linear-gradient(to bottom, #000000, #081016);
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: 100vw 100vh;
+}
+
+#featured-item {
+  background-image: url("src/assets/backgroundstars-gradient.webp")
 }
