@@ -8,8 +8,7 @@ import {
     fadeAnimation
 } from '../config/motion';
 
-import MenuButton from '../../src/components/MenuButton';
-import CartButton from '../../src/components/CartButton';
+import CartButton from '../components/Header-Components/CartButton';
 
 const Home = () => {
   return (
@@ -48,7 +47,6 @@ const Home = () => {
                     </motion.a>
 
                     {/* Menu */}
-                    <MenuButton />
 
                 </motion.div>
             </motion.header>

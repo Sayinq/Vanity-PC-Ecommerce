@@ -1,7 +1,7 @@
 import { React, useState } from 'react'
 import { motion } from 'framer-motion';
-import { slideAnimation, fadeAnimation } from '../config/motion';
-import CartQuantity from '../components/CartQuantity';
+import { slideAnimation, fadeAnimation } from '../../config/motion';
+import CartQuantity from '../Cart-Components/CartQuantity';
 
 function CartButton() {
     const [isCartOpen, setIsCartOpen] = useState(false);
@@ -42,7 +42,7 @@ return (
                 <div className="flex flex-col justify-center items-center py-4">
                     <h2 className="lg:text-lg sm:text-xs font-semibold text-black pb-4">Free Shipping over $2,500!</h2>
                     <div className="bg-transparent border-black border-2 w-3/4 h-4 rounded-full">
-                        <div className="bg-black h-full w-3/4 rounded-r-full"></div>
+                        <div className="bg-green-500 h-full w-full rounded-full"></div>
                     </div>
                 </div>
 
