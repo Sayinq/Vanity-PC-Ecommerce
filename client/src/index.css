@@ -17,7 +17,42 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+  --star-color: rgb(192, 248, 170);
+
   --item-title : #3F3853;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from, to {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
 }
 
 body {
@@ -31,6 +66,8 @@ body {
   background-repeat: no-repeat;
   background-size: 100vw 100vh;
 }
+
+/* Featured Item CSS */
 
 #featured-item {
   background-image: url("src/assets/backgroundstars-gradient.webp")
@@ -46,16 +83,255 @@ body {
   100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
-#close-cart {
-  cursor: pointer;
-}
 
-#quickbuy-eliteforce:hover #quickbuy-eliteforce__header {
+#item-details:hover h2 {
   color: white;
   transition: color 0.5s ease-in-out;
 }
 
-.image {
-  max-width: 100%;
-  max-height: 100%;
+#item-details:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#item-details:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Cart CSS */
+
+#close-cart {
+  cursor: pointer;
+}
+
+/* Quickbuy Items CSS */
+#quickbuy {
+  background: linear-gradient(to bottom, #484059, var(--violet));
+}
+
+/* Vanity Prebuilt Header CSS */
+#quickbuy-header-wrapper {
+  box-shadow:
+  0px 2.3px 2.2px rgba(0, 0, 0, 0.07),
+  0px 5.5px 5.3px rgba(0, 0, 0, 0.069),
+  0px 10.4px 10px rgba(0, 0, 0, 0.065),
+  0px 18.5px 17.9px rgba(0, 0, 0, 0.059),
+  0px 34.7px 33.4px rgba(0, 0, 0, 0.049),
+  0px 83px 80px rgba(0, 0, 0, 0.033);
+  background: center / cover url('.././src/assets/stackedwaves.svg');
+  background-position-x: 55%;
+  background-size: 100vw 100vh;
+  transition: background 1s ease-in-out;
+}
+
+#quickbuy-header-wrapper:hover {
+  background: center / cover url('.././src/assets/stackedwaves.svg');
+  background-size: 100vw 100vh;
+  background-position-x: 55%;
+  background-position-y: 63%;
+  transition: background 1s ease-in-out;
+}
+
+/* Prebuilt Footer CSS */
+
+/* Quickbuy Items Box-Shadow */
+#quickbuy-eliteforce,
+#quickbuy-infernox, 
+#quickbuy-thunderstrike,
+#quickbuy-novablade, 
+#quickbuy-quantumpulse,
+#quickbuy-solarflare {
+  box-shadow:
+  0px 2.3px 2.2px rgba(0, 0, 0, 0.07),
+  0px 5.5px 5.3px rgba(0, 0, 0, 0.069),
+  0px 10.4px 10px rgba(0, 0, 0, 0.065),
+  0px 18.5px 17.9px rgba(0, 0, 0, 0.059),
+  0px 34.7px 33.4px rgba(0, 0, 0, 0.049),
+  0px 83px 80px rgba(0, 0, 0, 0.033);
+}
+
+/* EliteForce CSS */
+#quickbuy-eliteforce:hover h2 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#quickbuy-eliteforce:hover img {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+#quickbuy-eliteforce:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#quickbuy-eliteforce:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+/* InfernoX CSS */
+#quickbuy-infernox:hover h2 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#quickbuy-infernox:hover img {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+#quickbuy-infernox:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#quickbuy-infernox:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Thunderstrike CSS */
+#quickbuy-thunderstrike:hover h2 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#quickbuy-thunderstrike:hover img {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+#quickbuy-thunderstrike:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#quickbuy-thunderstrike:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+/* NovaBlade CSS */
+#quickbuy-novablade:hover h2 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#quickbuy-novablade:hover img {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+#quickbuy-novablade:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#quickbuy-novablade:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+/* QuantumPulse CSS */
+#quickbuy-quantumpulse:hover h2 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#quickbuy-quantumpulse:hover img {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+#quickbuy-quantumpulse:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#quickbuy-quantumpulse:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+/* SolarFlare CSS */
+#quickbuy-solarflare:hover h2 {
+  color: white;
+  transition: color 0.5s ease-in-out;
+}
+
+#quickbuy-solarflare:hover img {
+  transform: scale(1.05);
+  transition: scale 0.5s ease-in-out;
+}
+
+#quickbuy-solarflare:hover #view-specs {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+#quickbuy-solarflare:hover #atc-button {
+  background: white;
+  color: black;
+  transition: all 0.25s ease-in-out;
+}
+
+
+/* Magic Star */
+
+.magic {
+  display: inline-block;
+  position: relative;
+}
+
+.magic > .magic-star {
+  --size: clamp(20px, 1.5vw, 30px);
+  
+  animation: scale 700ms ease forwards;
+  display: block;
+  height: var(--size);
+  left: var(--star-left);
+  position: absolute;
+  top: var(--star-top);
+  width: var(--size);
+}
+
+.magic > .magic-star > svg {
+  animation: rotate 1000ms linear infinite;
+  display: block;
+  opacity: 0.7;
+}
+
+.magic > .magic-star > svg > path {
+  fill: var(--star-color);
+}
+
+.magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
 }
