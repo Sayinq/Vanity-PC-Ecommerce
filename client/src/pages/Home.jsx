@@ -10,6 +10,7 @@ import {
 
 import CartButton from '../components/Header-Components/CartButton';
 import PCTabMenu from '../components/Header-Components/PC-Tab';
+import PartsTabMenu from '../components/Header-Components/Parts-Tab';
 
 const Home = () => {
   return (
@@ -24,9 +25,7 @@ const Home = () => {
                     className="w-24 h-24 mr-4 hover:scale-110 transition-scale ease-in-out duration-100" />
                     <motion.ul className="flex flex-row items-center gap-x-8" {...fadeAnimation}>
                         <PCTabMenu />
-                        <motion.li className="p-2 text-base hover:border-b-2 md:flex sm:hidden">
-                            <a id="Parts-Tab" href="#">Parts</a>
-                        </motion.li>
+                        <PartsTabMenu />
                         <motion.li className="p-2 text-base hover:border-b-2 md:flex sm:hidden">
                             <a id="FAQ" href="#">FAQ</a>
                         </motion.li>
@@ -95,7 +94,7 @@ const Home = () => {
 
                     <div id="item-links" className="">
 
-                    <div id="featured-button__wrapper" className="flex flex-row gap-x-2">
+                    <div id="featured-button__wrapper" className="flex flex-row gap-x-2 lg:pb-0 md:pb-24">
                         <button id="view-specs" className="flex flex-row text-center items-center transition-color ease-in-out duration-75 px-6 py-2 w-auto h-10 text-white bg-black hover:bg-white hover:text-black rounded-xl">
                         <p id="view-specs__text" className="pr-2">View Specs</p>
                         <ion-icon name="eye-outline"></ion-icon>
@@ -113,8 +112,8 @@ const Home = () => {
         {/* Premade / Quickbuy Section */}
 
         <section id="quickbuy" className="flex items-center justify-evenly bg-[#212032] w-full h-full z-10 py-8">
-            <div id="quickbuy-wrapper" className="flex flex-wrap justify-evenly w-full py-12 pb-20 gap-y-28">
-                <div id="quickbuy-eliteforce" className="p-8 bg-[#081016] lg:w-1/3 md:w-3/4 h-auto m-0.5 rounded-lg">
+            <div id="quickbuy-wrapper" className="transition-colors ease-in-out  flex flex-wrap justify-evenly w-full py-12 pb-20 gap-y-28">
+                <div id="quickbuy-eliteforce" className="transition-colors ease-in-out p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/3 md:w-3/4 h-auto m-0.5 rounded-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
                         <img src="./src/assets/gaming-pc-2.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>

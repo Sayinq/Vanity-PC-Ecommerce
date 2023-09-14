@@ -5,7 +5,7 @@ import { slideAnimation, fadeAnimation } from '../../config/motion';
 const PCTabContent = () => {
   return (
     <motion.div 
-        className="absolute py-2 w-full bg-white border text-center border-gray-300 shadow-lg"
+        className="absolute py-2 w-full bg-[#1A1C1E] border-t-[2px] text-center border-gray-300 shadow-lg"
         style={{ minWidth: 'max-content' }}    
         initial="hidden"
         {...slideAnimation('up')}
@@ -14,78 +14,29 @@ const PCTabContent = () => {
       {/* Dropdown content here */}
 
       <div className="flex flex-row w-full items-center">
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc.png"  
-              alt="Image 1"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-full text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           Vanguard
         </a>
       </div>
       <div className="flex flex-row items-center">
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc-2.png"  
-              alt="Image 2"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-1/3 text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           EliteForce
         </a>
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc-3.png"  
-              alt="Image 3"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-1/3 text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           InfernoX
         </a>
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc-4.png"  
-              alt="Image 4"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-1/3 text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           ThunderStrike
         </a>
       </div>
       <div className="flex flex-row items-center">
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc-5.png"  
-              alt="Image 5"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-1/3 text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           NovaBlade
         </a>
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc-6.png"  
-              alt="Image 6"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-1/3 text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           QuantumPulse
         </a>
-        <a href="#" className="block w-full text-center px-8 py-6 text-sm text-gray-700 hover:bg-gray-100">
-          <span className="image-wrapper flex flex-col justify-center items-center">
-            <img
-              src="./src/assets/gaming-pc-7.png"  
-              alt="Image 7"
-              className="image h-16 w-16"
-            />
-          </span>
+        <a href="#" className="block w-1/3 text-center px-8 py-6 text-xl text-white hover:text-black hover:bg-gray-100">
           SolarFlare
         </a>
       </div>
