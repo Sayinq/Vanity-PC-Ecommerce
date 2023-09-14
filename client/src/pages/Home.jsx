@@ -13,6 +13,7 @@ import PCTabMenu from '../components/Header-Components/PC-Tab';
 import PartsTabMenu from '../components/Header-Components/Parts-Tab';
 import VanguardText from '../components/VanguardText';
 import ShopNow from '../components/Hero-Components/ShopNow';
+import StartBuild from '../components/Hero-Components/StartBuild';
 
 const Home = () => {
   return (
@@ -62,9 +63,7 @@ const Home = () => {
             </motion.div>
             <motion.div id="hero-button-wrapper" className="flex flex-row items center gap-x-4" {...slideAnimation('up')}>
                 <ShopNow />
-                <motion.button id="hero-button" className="transition-color ease-in-out duration-75 px-6 py-2 w-36 text-white bg-black hover:bg-white hover:text-black rounded-xl">
-                    Start Build
-                </motion.button>
+                <StartBuild />
             </motion.div>
         </section>
 
