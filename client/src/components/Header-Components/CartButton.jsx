@@ -14,9 +14,7 @@ return (
     <div className="relative">
         <motion.div 
             id="cart-button"
-            className="flex items-center p-4 text-lg hover:border-b-2 cursor-pointer"
-            initial = "hidden"
-            {...fadeAnimation}
+            className="flex items-center p-4 text-2xl hover:border-b-2 cursor-pointer"
             onClick={toggleCart}
         >
             <ion-icon name="cart-outline"></ion-icon>

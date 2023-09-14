@@ -9,6 +9,7 @@ import {
 } from '../config/motion';
 
 import CartButton from '../components/Header-Components/CartButton';
+import PCTabMenu from '../components/Header-Components/PC-Tab';
 
 const Home = () => {
   return (
@@ -22,14 +23,12 @@ const Home = () => {
                     <img src="src/assets/vanity_icon.png" 
                     className="w-24 h-24 mr-4 hover:scale-110 transition-scale ease-in-out duration-100" />
                     <motion.ul className="flex flex-row items-center gap-x-8" {...fadeAnimation}>
+                        <PCTabMenu />
                         <motion.li className="p-2 text-base hover:border-b-2 md:flex sm:hidden">
-                            <a href="#">Gaming PCs</a>
+                            <a id="Parts-Tab" href="#">Parts</a>
                         </motion.li>
                         <motion.li className="p-2 text-base hover:border-b-2 md:flex sm:hidden">
-                            <a href="#">Parts</a>
-                        </motion.li>
-                        <motion.li className="p-2 text-base hover:border-b-2 md:flex sm:hidden">
-                            <a href="#">FAQ</a>
+                            <a id="FAQ" href="#">FAQ</a>
                         </motion.li>
                     </motion.ul>
                 </motion.div>
