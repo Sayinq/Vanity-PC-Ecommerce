@@ -24,7 +24,7 @@ const Home = () => {
                 {/* Navbar Logo */}
 
                 <motion.div id="nav-logo-links" class="flex flex-row" {...slideAnimation('left')}>
-                    <img src="src/assets/vanity_icon.png" 
+                    <img src="src/assets/Favicon/vanity_icon.png" 
                     className="w-24 h-24 mr-4 hover:scale-110 transition-scale ease-in-out duration-100" />
                     <motion.ul className="flex flex-row items-center gap-x-8" {...fadeAnimation}>
                         <PCTabMenu />
@@ -56,10 +56,10 @@ const Home = () => {
 
         <section id="hero" className="flex flex-col items-center justify-center w-auto h-screen z-10 mt-24">
             <motion.div id="hero-header" className="flex" {...slideAnimation('up')}>
-                <h2 class="text-white md:text-6xl font-black drop-shadow-md">Welcome to Vanity</h2>
+                <h2 class="text-white sm:text-6xl font-black drop-shadow-md">Welcome to Vanity</h2>
             </motion.div>
             <motion.div id="hero-smaller" className="flex py-8" {...slideAnimation('up')}>
-                <p class="text-white md:text-2xl font-semibold drop-shadow-md">Your best choice for premium PC parts.</p>
+                <p class="text-white sm:text-2xl font-semibold drop-shadow-md">Your best choice for premium PC parts.</p>
             </motion.div>
             <motion.div id="hero-button-wrapper" className="flex flex-row items center gap-x-4" {...slideAnimation('up')}>
                 <ShopNow />
@@ -71,9 +71,9 @@ const Home = () => {
 
         {/* Featured Item Section */}
 
-        <section id="featured-item" className="flex lg:flex-row md:flex-col items-center justify-around w-full h-screen z-10">
+        <section id="featured-item" className="flex lg:flex-row sm:flex-col items-center justify-around w-full h-screen z-10 sm:px-8">
             <div id="item-picture" className="py-4">
-                <img src="./src/assets/gaming-pc.png" className="lg:scale-125 md:scale-115"/>
+                <img src="./src/assets/Gaming-PCs/gaming-pc.png" className="lg:scale-125 md:scale-115"/>
             </div>
             <div
                 id="item-details"
@@ -113,14 +113,14 @@ const Home = () => {
         <section id="quickbuy" className="flex flex-col items-center text-center justify-evenly w-full h-full z-10 py-8">
 
             {/* Maybe some images float up in the div on hover/scrollintoview? */}
-            <div id="quickbuy-header-wrapper" className="flex flex-col w-11/12 h-auto items-center text-center justify-center content-center py-24 gap-y-4 rounded-lg">
+            <div id="quickbuy-header-wrapper" className="flex flex-col w-11/12 h-auto items-center text-center justify-center content-center py-24 gap-y-4 rounded-lg md:px-0 sm:px-12">
                 <h2 className="text-5xl font-bold tracking-wide">Vanity Prebuilt Gaming PCs</h2>
-                <p className="text-xl font-medium lg:w-1/3 md:w-1/2 h-auto">We use the latest generation performance components and configurations to get you gaming, <i>fast</i>.</p>
+                <p className="text-xl font-medium w-1/3 h-auto">We use the latest generation performance components and configurations to get you gaming, <i>fast</i>.</p>
             </div>
             <div id="quickbuy-wrapper" className="transition-colors ease-in-out  flex flex-wrap justify-evenly w-full py-12 pb-20 gap-y-28">
                 <div id="quickbuy-eliteforce" className="transition-colors ease-in-out p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/4 md:w-3/4 h-auto m-0.5 rounded-lg shadow-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
-                        <img src="./src/assets/gaming-pc-2.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
+                        <img src="./src/assets/Gaming-PCs/gaming-pc-2.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>
                     <h2 id="quickbuy-eliteforce__header" className="text-itemtitle md:text-4xl py-1 pt-4 font-black tracking-wide uppercase">EliteForce</h2>
                     <h2 id="quickbuy-eliteforce__price" className="md:text-lg py-4 text-[222133] font-bold tracking-widest uppercase">$3,999.99</h2>
@@ -142,7 +142,7 @@ const Home = () => {
                 </div>
                 <div id="quickbuy-infernox" className="p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/4 md:w-3/4 h-auto m-0.5 rounded-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
-                        <img src="./src/assets/gaming-pc-3.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
+                        <img src="./src/assets/Gaming-PCs/gaming-pc-3.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>
                     <h2 id="quickbuy-infernox__header" className="text-itemtitle md:text-4xl py-1 pt-4 font-black tracking-wide uppercase">InfernoX</h2>
                     <h2 id="quickbuy-inferno__price" className="md:text-lg py-4 text-[222133] font-bold tracking-widest uppercase">$3,499.99</h2>
@@ -164,7 +164,7 @@ const Home = () => {
                 </div>
                 <div id="quickbuy-thunderstrike" className="p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/4 md:w-3/4 h-auto m-0.5 rounded-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
-                        <img src="./src/assets/gaming-pc-4.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
+                        <img src="./src/assets/Gaming-PCs/gaming-pc-4.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>
                     <h2 id="quickbuy-thunderstrike__header" className="text-itemtitle md:text-4xl py-1 pt-4 font-black tracking-wide uppercase">ThunderStrike</h2>
                     <h2 id="quickbuy-thunderstrike__price" className="md:text-lg py-4 text-[222133] font-bold tracking-widest uppercase">$2,999.99</h2>
@@ -186,7 +186,7 @@ const Home = () => {
                 </div>
                 <div id="quickbuy-novablade" className="p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/4 md:w-3/4 h-auto m-0.5 rounded-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
-                        <img src="./src/assets/gaming-pc-5.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
+                        <img src="./src/assets/Gaming-PCs/gaming-pc-5.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>
                     <h2 id="quickbuy-novablade__header" className="text-itemtitle md:text-4xl py-1 pt-4 font-black tracking-wide uppercase">NovaBlade</h2>
                     <h2 id="quickbuy-novablade__price" className="md:text-lg py-4 text-[222133] font-bold tracking-widest uppercase">$2,499.99</h2>
@@ -208,7 +208,7 @@ const Home = () => {
                 </div>
                 <div id="quickbuy-quantumpulse" className="p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/4 md:w-3/4 h-auto m-0.5 rounded-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
-                        <img src="./src/assets/gaming-pc-6.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
+                        <img src="./src/assets/Gaming-PCs/gaming-pc-6.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>
                     <h2 id="quickbuy-quantumpulse__header" className="text-itemtitle md:text-4xl py-1 pt-4 font-black tracking-wide uppercase">QuantumPulse</h2>
                     <h2 id="quickbuy-quantumpulse__price" className="md:text-lg py-4 text-[222133] font-bold tracking-widest uppercase">$1,999.99</h2>
@@ -230,7 +230,7 @@ const Home = () => {
                 </div>
                 <div id="quickbuy-solarflare" className="p-8 bg-[#081016] hover:bg-gradient-to-r from-cyan-500 to-blue-500 lg:w-1/4 md:w-3/4 h-auto m-0.5 rounded-lg">
                     <div id="quickbuy-image" className="flex justify-center items-center border-b-2 py-4">
-                        <img src="./src/assets/gaming-pc-7.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
+                        <img src="./src/assets/Gaming-PCs/gaming-pc-7.png" className="w-80 h-80 hover:scale-[1.05] transition-scale ease-in-out duration-100"/>
                     </div>
                     <h2 id="quickbuy-solarflare__header" className="text-itemtitle md:text-4xl py-1 pt-4 font-black tracking-wide uppercase">SolarFlare</h2>
                     <h2 id="quickbuy-solarflare__price" className="md:text-lg py-4 text-[222133] font-bold tracking-widest uppercase">$1,499.99</h2>
@@ -253,10 +253,31 @@ const Home = () => {
             </div>
             {/* Build Your Own PC Section */}
             {/* Wrap in a background and put a gradient over the left black to transparent for text clarity */}
-            <div id="quickbuy-footer-wrapper" className="flex flex-col w-screen h-[600px] bg-black items-center text-center justify-center content-center py-24 -mb-8 gap-y-4 rounded-lg">
-                <h2 className="text-5xl font-bold tracking-wide">Vanity Prebuilt Gaming PCs</h2>
-                <p className="text-xl font-medium w-1/3 h-auto">We use the latest generation performance components and configurations to get you gaming, <i>fast</i>.</p>
+            <div
+                id="quickbuy-footer-wrapper"
+                className="flex flex-col w-screen h-[600px] py-24 -mb-8"
+                style={{
+                    backgroundImage: `url(./src/assets/Backgrounds/gamingpc-header.png)`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                }}
+                >
+                <div className="flex flex-col justify-start text-start ml-12 w-2/3 h-auto pt-32 gap-y-6">
+                    <h2 className="lg:text-5xl sm:text-2xl font-bold tracking-wide text-white">
+                        Get fast, Get Playing
+                    </h2>
+                    <p className="lg:text-xl md:text-lg font-medium lg:w-1/2 sm:w-[270px] h-auto text-white">
+                        Unleash lightning speed with cutting-edge components.
+                    </p>
+                    <button 
+                        id="quickbuy-footer__button" 
+                        className="transition ease-in-out duration-100 w-48 rounded-lg outline outline-[#6038A7] hover:bg-[#6038A7] hover:scale-105 text-white font-semibold px-8 py-2 "
+                    >
+                        Start Building
+                    </button>
+                </div>
             </div>
+
         </section>
 
         {/* Partners Section */}
@@ -264,13 +285,13 @@ const Home = () => {
         <section id="our-partners" className="flex justify-center items-center bg-[#081016] px-8 py-14  w-full h-auto">
             <motion.div id="partners-wrapper" className="flex flex-row justify-center items-center w-full h-auto gap-x-16" {...fadeAnimation}>
             <h2 id="partners-header" className="text-white text-lg font-medium mr-4">Our Partners</h2>
-                <img src="./src/assets/partner-icon.png" 
+                <img src="./src/assets/Partner-icons/partner-icon.png" 
                     className="transition-all duration-110 ease-in-out md:w-24 md:h-24 lg:w-48 lg:h-48 p-4 hover:scale-110" />
-                <img src="./src/assets/partner-icon-2.png" 
+                <img src="./src/assets/Partner-icons/partner-icon-2.png" 
                     className="transition-all duration-110 ease-in-out md:w-24 md:h-24 lg:w-48 lg:h-48 p-4 hover:scale-110" />
-                <img src="./src/assets/partner-icon-3.png" 
+                <img src="./src/assets/Partner-icons/partner-icon-3.png" 
                     className="transition-all duration-110 ease-in-out md:w-24 md:h-24 lg:w-48 lg:h-48 p-4 hover:scale-110" />
-                <img src="./src/assets/partner-icon-4.png" 
+                <img src="./src/assets/Partner-icons/partner-icon-4.png" 
                     className="transition-all duration-110 ease-in-out md:w-24 md:h-24 lg:w-48 lg:h-48 p-4 hover:scale-110" />
                     
             </motion.div>

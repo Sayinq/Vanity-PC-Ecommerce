@@ -70,7 +70,7 @@ body {
 /* Featured Item CSS */
 
 #featured-item {
-  background-image: url("src/assets/backgroundstars-gradient.webp")
+  background-image: url("src/assets/Backgrounds/backgroundstars-gradient.webp")
 }
 
 #item-details {
@@ -121,14 +121,14 @@ body {
   0px 18.5px 17.9px rgba(0, 0, 0, 0.059),
   0px 34.7px 33.4px rgba(0, 0, 0, 0.049),
   0px 83px 80px rgba(0, 0, 0, 0.033);
-  background: center / cover url('.././src/assets/stackedwaves.svg');
+  background: center / cover url('.././src/assets/Backgrounds/stackedwaves.svg');
   background-position-x: 55%;
   background-size: 100vw 100vh;
   transition: background 1s ease-in-out;
 }
 
 #quickbuy-header-wrapper:hover {
-  background: center / cover url('.././src/assets/stackedwaves.svg');
+  background: center / cover url('.././src/assets/Backgrounds/stackedwaves.svg');
   background-size: 100vw 100vh;
   background-position-x: 55%;
   background-position-y: 63%;
