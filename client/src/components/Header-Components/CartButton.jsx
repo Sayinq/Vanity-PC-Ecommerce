@@ -48,7 +48,7 @@ return (
                 {/* Container needs to be main inside for scrollability for cart if multiple added */}
                 <div className="w-full h-auto py-4">
                     <div id="cart-image" className="flex lg:flex-nowrap sm:flex-wrap lg:justify-between sm:justify-center items-center w-full border-b-2">
-                        <img src="./src/assets/gaming-pc-2.png" className="h-12 w-12" />
+                        <img src="../../src/assets/Gaming-PCs/gaming-pc-2.png" className="h-12 w-12" />
                         <div className="flex lg:flex-row sm:flex-col items-center w-full h-auto p-4">
 
                 {/* Name based on item added */}
